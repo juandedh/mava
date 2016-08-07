@@ -1,0 +1,15 @@
+doctrine_mongodb:
+    connections:
+        default:
+            server: mongodb://%mongodb_host%:%mongodb_port%
+            options: {}
+    default_database: %mongodb_name%
+    document_managers:
+        default:
+            mappings:
+                AppBundle: ~
+                MyBundle:
+                    type: annotation
+                    dir: %kernel.root_dir%/../src/MyBundle/Document
+                    prefix: MyBundle\Document
+                    is_bundle: false
