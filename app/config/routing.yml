@@ -1,7 +1,7 @@
 my:
     resource: "@MyBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /mybundle
 
 app:
     resource: "@AppBundle/Controller/"
